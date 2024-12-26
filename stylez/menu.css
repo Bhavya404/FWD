@@ -225,6 +225,38 @@ input:checked + .slider:before {
 
 
 
+.add-to-cart-2 {
+    position: fixed; /* Fixes the button in place relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right-hand side of the viewport */
+    background-color: rgb(239, 79, 95);
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 50px; /* Slightly larger size */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.add-to-cart-2 i {
+    font-size: 18px; /* Slightly larger icon size */
+}
+
+.add-to-cart-2:hover {
+    background-color: rgb(200, 50, 70);
+    transform: scale(1.1); /* Grows slightly on hover */
+}
+
+
+
+
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 1024px) {
     .menu-item {
